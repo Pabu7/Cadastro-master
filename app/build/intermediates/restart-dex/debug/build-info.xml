@@ -4,17 +4,17 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="18576151642568" >
+    timestamp="19262972744291" >
 
     <task
         name="javac"
-        duration="234" />
+        duration="213" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="30" />
     <task
         name="verifier"
         duration="2" />
@@ -33,7 +33,7 @@
             location="C:\Users\Paulo\Desktop\Cadastro-master\Cadastro-master\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
     </build>
-    <build timestamp="18576151642568" >
+    <build timestamp="19262972744291" >
         <artifact
             location="C:\Users\Paulo\Desktop\Cadastro-master\Cadastro-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />

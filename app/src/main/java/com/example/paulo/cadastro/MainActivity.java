@@ -48,16 +48,36 @@ public class MainActivity extends AppCompatActivity {
             msexo = "Feminino";
         }
         if(Sol.isChecked()){
-            mestciv = "Solteiro(a)";
+            if(Masc.isChecked()) {
+                mestciv = "Solteiro";
+            }
+            else{
+                mestciv = "Solteira";
+            }
         }
         if(Cas.isChecked()){
-            mestciv = "Casado(a)";
+            if(Masc.isChecked()) {
+                mestciv = "Casado";
+            }
+            else{
+                mestciv = "Casada";
+            }
         }
         if(Div.isChecked()){
-            mestciv = "Divorciado(a)";
+            if(Masc.isChecked()) {
+                mestciv = "Divorciado";
+            }
+            else{
+                mestciv = "Divorciada";
+            }
         }
         if(Viu.isChecked()){
-            mestciv = "Viúvo(a)";
+            if(Masc.isChecked()) {
+                mestciv = "Viúvo";
+            }
+            else{
+                mestciv = "Viúva";
+            }
         }
         intent.putExtra(EXTRA_NOME, mnome);
         intent.putExtra(EXTRA_IDADE, midade);
@@ -76,18 +96,33 @@ public class MainActivity extends AppCompatActivity {
             intente.putExtra(EXTRA_ERRO, merro);
             startActivity(intente);
         }
-        if(cpf.length()>11){
+        if(cpf.length() > 11){
             merro = "CPF com muitos digitos";
             intente.putExtra(EXTRA_ERRO, merro);
             startActivity(intente);
         }
-        if(rg.length()>13){
+        if(cpf.length() < 11){
+            merro = "CPF faltando digitos";
+            intente.putExtra(EXTRA_ERRO, merro);
+            startActivity(intente);
+        }
+        if(rg.length()>9){
             merro = "RG com muitos digitos";
+            intente.putExtra(EXTRA_ERRO, merro);
+            startActivity(intente);
+        }
+        if(rg.length()<7){
+            merro = "RG com faltando digitos";
             intente.putExtra(EXTRA_ERRO, merro);
             startActivity(intente);
         }
         if(telefone.length()>11){
             merro = "Telefone com muitos digitos";
+            intente.putExtra(EXTRA_ERRO, merro);
+            startActivity(intente);
+        }
+        if(telefone.length()<7){
+            merro = "Telefone faltando digitos";
             intente.putExtra(EXTRA_ERRO, merro);
             startActivity(intente);
         }
