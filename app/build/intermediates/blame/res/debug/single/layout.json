@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\src\\main\\res\\layout\\activity_cadastrados.xml"
     },
     {
-        "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_erros.xml",
-        "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\src\\main\\res\\layout\\activity_erros.xml"
-    },
-    {
         "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_erros.xml",
+        "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\src\\main\\res\\layout\\activity_erros.xml"
     },
     {
         "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -100,12 +100,12 @@
         "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_media.xml"
-    },
-    {
         "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "C:\\Users\\Paulo\\Desktop\\Cadastro-master\\Cadastro-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
