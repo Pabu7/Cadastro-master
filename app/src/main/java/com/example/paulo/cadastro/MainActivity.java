@@ -1,23 +1,22 @@
 package com.example.paulo.cadastro;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public final static String EXTRA_NOME = "com.example.paulo.cadastro.NOME";
-    public final static String EXTRA_IDADE = "com.example.paulo.cadastro.IDADE";
-    public final static String EXTRA_CPF = "com.example.paulo.cadastro.CPF";
-    public final static String EXTRA_RG = "com.example.paulo.cadastro.RG";
-    public final static String EXTRA_TELEFONE = "com.example.paulo.cadastro.TELEFONE";
-    public final static String EXTRA_SEXO = "com.example.paulo.cadastro.SEXO";
-    public final static String EXTRA_ESTCIV = "com.example.paulo.cadastro.ESTCIV";
     public final static String EXTRA_ERRO = "com.example.paulo.cadastro.ERRO";
+    private Context context;
+    private SharedPreferences sharedPref;
+    private SharedPreferences.Editor editor;
 
     public void sendMessage(View v){
         Intent intent = new Intent(this, Cadastrados.class);
@@ -79,56 +78,129 @@ public class MainActivity extends AppCompatActivity {
                 mestciv = "Viúva";
             }
         }
-        intent.putExtra(EXTRA_NOME, mnome);
-        intent.putExtra(EXTRA_IDADE, midade);
-        intent.putExtra(EXTRA_TELEFONE, mtelefone);
-        intent.putExtra(EXTRA_CPF, mcpf);
-        intent.putExtra(EXTRA_RG, mrg);
-        intent.putExtra(EXTRA_SEXO, msexo);
-        intent.putExtra(EXTRA_ESTCIV, mestciv);
+        context = getBaseContext();
+        sharedPref = context.getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+        editor = sharedPref.edit();
+        editor.putString("nome", mnome);
+        editor.putString("idade", midade);
+        editor.putString("telefone", mtelefone);
+        editor.putString("cpf", mcpf);
+        editor.putString("rg", mrg);
+        editor.putString("sexo", msexo);
+        editor.putString("estciv", mestciv);
+
         if(mnome.isEmpty() || midade.isEmpty() || mtelefone.isEmpty() || mcpf.isEmpty() || mrg.isEmpty() || msexo.equals("Vazio") || mestciv.equals("Vazio")){
             merro = "Forgot something, did we?";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
         }
-        if(Integer.parseInt(idade.getText().toString())>150){
-            merro = "Idade acima do limite, tente novamente";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+        if(mnome.isEmpty()){
+            if(merro.equals("Vazio")) {
+                merro = "Digite seu nome";
+            }
+            else{
+                merro = merro + "\nDigite seu nome";
+            }
+        }
+        if(midade.isEmpty()){
+            if(merro.equals("Vazio")) {
+                merro = "Digite sua idade";
+            }
+            else{
+                merro = merro + "\nDigite sua idade";
+            }
+        }
+        if(!(midade.isEmpty()) && Integer.parseInt(idade.getText().toString())>150){
+            if(merro.equals("Vazio")) {
+                merro = "Idade acima do limite, tente novamente";
+            }
+            else{
+                merro = merro + "\nIdade acima do limite, tente novamente";
+            }
         }
         if(cpf.length() > 11){
-            merro = "CPF com muitos digitos";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+            if(merro.equals("Vazio")) {
+                merro = "CPF com muitos digitos";
+            }
+            else{
+                merro = merro + "\nCPF com muitos digitos";
+            }
         }
         if(cpf.length() < 11){
-            merro = "CPF faltando digitos";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+            if(merro.equals("Vazio")) {
+                merro = "CPF faltando digitos";
+            }
+            else{
+                merro = merro + "\nCPF faltando digitos";
+            }
         }
         if(rg.length()>9){
-            merro = "RG com muitos digitos";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+            if(merro.equals("Vazio")) {
+                merro = "RG com muitos digitos";
+            }
+            else{
+                merro = merro + "\nRG com muitos digitos";
+            }
         }
         if(rg.length()<7){
-            merro = "RG com faltando digitos";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+            if(merro.equals("Vazio")) {
+                merro = "RG faltando digitos";
+            }
+            else{
+                merro = merro + "\nRG faltando digitos";
+            }
         }
         if(telefone.length()>11){
-            merro = "Telefone com muitos digitos";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+            if(merro.equals("Vazio")) {
+                merro = "Telefone com muitos digitos";
+            }
+            else{
+                merro = merro + "\nTelefone com muitos digitos";
+            }
         }
         if(telefone.length()<7){
-            merro = "Telefone faltando digitos";
-            intente.putExtra(EXTRA_ERRO, merro);
-            startActivity(intente);
+            if(merro.equals("Vazio")) {
+                merro = "Telefone faltando digitos";
+            }
+            else{
+                merro = merro + "\nTelefone faltando digitos";
+            }
         }
+        if(msexo.equals("Vazio")){
+            if(merro.equals("Vazio")) {
+                merro = "Sexo não definido";
+            }
+            else{
+                merro = merro + "\nSexo não definido";
+            }
+        }
+        if(mestciv.equals("Vazio")){
+            if(merro.equals("Vazio")) {
+                merro = "Estado civil não definido";
+            }
+            else{
+                merro = merro + "\nEstado civil não definido";
+            }
+        }
+
         if(merro.equals("Vazio")) {
+            if(editor.commit()){
+                Toast.makeText(context, "Deu Certo", Toast.LENGTH_LONG).show();
+            }
+            else{
+                Toast.makeText(context, "Deu Errado", Toast.LENGTH_LONG).show();
+            }
             startActivity(intent);
         }
+        else{
+            editor.putString("erro", merro);
+            if(editor.commit()){
+                Toast.makeText(context, "Deu Certo", Toast.LENGTH_LONG).show();
+            }
+            else{
+                Toast.makeText(context, "Deu Errado", Toast.LENGTH_LONG).show();
+            }
+            startActivity(intente);
+        }
+
     }
 
 
