@@ -1813,7 +1813,26 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int app_name=0x7f060014;
+        public static final int cas=0x7f060015;
+        public static final int cpf=0x7f060016;
+        public static final int div=0x7f060017;
+        public static final int diva=0x7f060018;
+        public static final int divo=0x7f060019;
+        public static final int estciv=0x7f06001a;
+        public static final int fem=0x7f06001b;
+        public static final int idade=0x7f06001c;
+        public static final int masc=0x7f06001d;
+        public static final int nome=0x7f06001e;
+        public static final int rg=0x7f06001f;
+        public static final int sexo=0x7f060020;
+        public static final int sol=0x7f060021;
+        public static final int sola=0x7f060022;
+        public static final int solo=0x7f060023;
         public static final int status_bar_notification_info_overflow=0x7f060013;
+        public static final int telefone=0x7f060024;
+        public static final int viu=0x7f060025;
+        public static final int viua=0x7f060026;
+        public static final int viuo=0x7f060027;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090086;

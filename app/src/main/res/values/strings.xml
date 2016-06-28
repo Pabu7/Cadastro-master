@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Cadastro</string>
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="telefone">Telefone</string>
+    <string name="cpf">CPF</string>
+    <string name="rg">RG</string>
+    <string name="sexo">Sexo</string>
+    <string name="estciv">Estado Civil</string>
+    <string name="masc">Masculino</string>
+    <string name="fem">Feminino</string>
+    <string name="cas">Casado(a)</string>
+    <string name="sol">Solteiro(a)</string>
+    <string name="div">Divorciado(a)</string>
+    <string name="viu">Viúvo(a)</string>
+    <string name="viuo">Viúvo</string>
+    <string name="viua">Viúva</string>
+    <string name="divo">Divorciado</string>
+    <string name="diva">Divorciada</string>
+    <string name="solo">Solteiro</string>
+    <string name="sola">Solteira</string>
 </resources>

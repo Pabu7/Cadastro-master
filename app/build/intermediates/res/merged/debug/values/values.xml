@@ -214,7 +214,26 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Cadastro</string>
+    <string name="cas">Casado(a)</string>
+    <string name="cpf">CPF</string>
+    <string name="div">Divorciado(a)</string>
+    <string name="diva">Divorciada</string>
+    <string name="divo">Divorciado</string>
+    <string name="estciv">Estado Civil</string>
+    <string name="fem">Feminino</string>
+    <string name="idade">Idade</string>
+    <string name="masc">Masculino</string>
+    <string name="nome">Nome</string>
+    <string name="rg">RG</string>
+    <string name="sexo">Sexo</string>
+    <string name="sol">Solteiro(a)</string>
+    <string name="sola">Solteira</string>
+    <string name="solo">Solteiro</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="telefone">Telefone</string>
+    <string name="viu">Viúvo(a)</string>
+    <string name="viua">Viúva</string>
+    <string name="viuo">Viúvo</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.paulo.cadastro.ValidaCPF;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -178,6 +179,14 @@ public class MainActivity extends AppCompatActivity {
             }
             else{
                 merro = merro + "\nEstado civil não definido";
+            }
+        }
+        if(ValidaCPF.isCPF(cpf.getText().toString()) == false){
+            if(merro.equals("Vazio")) {
+                merro = "número de CPF inválido";
+            }
+            else{
+                merro = merro + "\nnúmero de CPF inválido";
             }
         }
 

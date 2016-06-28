@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Nome"
+        android:text="@string/nome"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Idade"
+        android:text="@string/idade"
         android:id="@+id/textView2"
         android:textSize="20dp"
         android:layout_below="@+id/nome"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Telefone"
+        android:text="@string/telefone"
         android:id="@+id/textView3"
         android:textSize="20dp"
         android:layout_below="@+id/idade"
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="CPF"
+        android:text="@string/cpf"
         android:id="@+id/textView4"
         android:textSize="20dp"
         android:layout_below="@+id/telefone"
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="RG"
+        android:text="@string/rg"
         android:id="@+id/textView5"
         android:textSize="20dp"
         android:layout_below="@+id/cpf"
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Sexo"
+        android:text="@string/sexo"
         android:id="@+id/textView6"
         android:textSize="20dp"
         android:layout_below="@+id/rg"
@@ -79,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Estado Civil"
+        android:text="@string/estciv"
         android:id="@+id/textView7"
         android:textSize="20dp"
         android:layout_below="@+id/radioGroup"
@@ -172,14 +172,14 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masculino"
+            android:text="@string/masc"
             android:id="@+id/Masc"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Feminino"
+            android:text="@string/fem"
             android:id="@+id/Fem"
             android:checked="false" />
 
@@ -196,7 +196,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Solteiro(a)"
+            android:text="@string/sol"
             android:id="@+id/Sol"
             android:checked="false"
             android:textSize="10dp" />
@@ -204,7 +204,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Casado(a)"
+            android:text="@string/cas"
             android:id="@+id/Cas"
             android:checked="false"
             android:textSize="10dp" />
@@ -212,7 +212,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Divorciado(a)"
+            android:text="@string/div"
             android:id="@+id/Div"
             android:checked="false"
             android:textSize="10dp" />
@@ -220,7 +220,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Viúvo(a)"
+            android:text="@string/viu"
             android:id="@+id/Viu"
             android:checked="false"
             android:textSize="10dp" />
