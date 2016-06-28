@@ -4,40 +4,31 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="42681058190021" >
+    timestamp="43653102932470" >
 
     <task
         name="javac"
-        duration="261" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="52" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3" />
+        duration="0" />
 
-    <artifact
-        location="D:\Backupn\Desktop\Cadastro-master\Cadastro-master\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="D:\Backupn\Desktop\Cadastro-master\Cadastro-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-        type="DEX" />
-
-    <build timestamp="40526689273471" >
+    <build timestamp="43148857963815" >
         <artifact
             location="D:\Backupn\Desktop\Cadastro-master\Cadastro-master\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="42681058190021" >
+    <build timestamp="43627633636583" >
         <artifact
             location="D:\Backupn\Desktop\Cadastro-master\Cadastro-master\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
-        <artifact
-            location="D:\Backupn\Desktop\Cadastro-master\Cadastro-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-            type="DEX" />
     </build>
+    <build timestamp="43653102932470" />
 
 </instant-run>

@@ -191,22 +191,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(merro.equals("Vazio")) {
-            if(editor.commit()){
-                Toast.makeText(context, "Deu Certo", Toast.LENGTH_LONG).show();
-            }
-            else{
-                Toast.makeText(context, "Deu Errado", Toast.LENGTH_LONG).show();
-            }
+            editor.commit();
             startActivity(intent);
         }
         else{
             editor.putString("erro", merro);
-            if(editor.commit()){
-                Toast.makeText(context, "Deu Certo", Toast.LENGTH_LONG).show();
-            }
-            else{
-                Toast.makeText(context, "Deu Errado", Toast.LENGTH_LONG).show();
-            }
+            editor.commit();
             startActivity(intente);
         }
 
